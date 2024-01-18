@@ -18,15 +18,11 @@ function genEmailPfx(i){
     return emailPfx;
 }
 
-function changePage(destinationPage){
-    document.getElementById(`${currentPage}`).style.backgroundColor="";
 
-
-}
 
 //generating the pagination button
 for(let pageIndex=1; pageIndex<=maxPageNum;pageIndex++){
-    pageButtonsContainer.innerHTML+=`<span class=\"buttonClass\" id=\"${pageIndex}\" onclick=\"changePage(${pageIndex})\">${pageIndex}</span>`;
+    pageButtonsContainer.innerHTML+=`<span class=\"buttonClass\" id=\"${pageIndex}\">${pageIndex}</span>`;
 }
 
 //loading first page
